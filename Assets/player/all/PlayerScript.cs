@@ -67,7 +67,7 @@ public class PlayerScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "boss"&&canDamage==true)
+        if (collision.transform.tag == "boss" && canDamage==true)
         {
             collision.gameObject.SendMessage("damage");
             canDamage = false;
